@@ -16,7 +16,9 @@ def VerifMdp():
     else:
         title.value = "off"
 btVerifMdp = PushButton(app, command=VerifMdp, text="verif password")
-
-
+#change value Slider
+def ChangeValeurSlider(slider_value):
+    title.size = slider_value
+text_slider = Slider(app, command=ChangeValeurSlider,start=0,end=255)
 
 app.display()
