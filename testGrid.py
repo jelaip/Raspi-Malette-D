@@ -3,7 +3,7 @@ from matriceBt import *
 #from moduleDTH11 import *
 #tabPositionnement
 
-app = App(title="My second GUI app", width=700, height=500, layout="grid")
+app = App(title="Systeme D", width=350, height=350, layout="grid")
 """behaviourLedSlider = Combo(app,options=["off","blink","on"],grid=[1,0],align="left")
 behaviourLedTxt = Text(app,text = "led 1 ",grid=[0,0],align="left")
 readHDT11Txt = Text(app,text = "led 2 ",grid=[0,1],align="left")
@@ -25,8 +25,8 @@ def AllumeLed(matrice,x,y):
         matrice[x,y].color = "red"
 btGetValue = PushButton(app, command=GetValue, text="GetValue", grid=[2,0], align="left")"""
 #DHT = moduleDTH11(pin =4,app=app,grid=[0,0])
-waffle = Waffle(app, grid=[0,3], height= 3 , width=3)
-matrice = matriceBt(app=app,grid=[3,3],ligne=3,colone=3,waffle=waffle)
+waffle = Waffle(app, grid=[0,1], height= 3 , width=3)
+matrice = matriceBt(app=app,grid=[0,2],ligne=3,colone=3,waffle=waffle)
 #matrice.createMat()
 #DHT.update();
 app.display()
