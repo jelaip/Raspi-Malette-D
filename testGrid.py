@@ -34,9 +34,4 @@ matrice = matriceBt(app=app,grid=[0,2],ligne=3,colone=3,waffle=waffle)
 led = moduleLed(app=app,grid=[0,0],textLed="switch led", colorLed= "blue",pin= 1)
 #matrice.createMat()
 #DHT.update();
-i=0;
-while True:
-    sleep(2)
-    i= i+1
-    print(i)
-    app.display()
+app.display()
